@@ -46,7 +46,7 @@ def get_filters():
         month_day_filter = input("\nWould you like to filter the data?"
                                 "\n'Yes' gives you the option to filter by month and/or day of week"
                                 "\n'No' displays all data: ").lower()
-        if month_day_filter == 'yes':
+        if month_day_filter == 'yes' or month_day_filter == 'y':
             month_day_filter = True
         elif month_day_filter == 'no':
             month_day_filter = False
@@ -226,7 +226,7 @@ def display_raw_data(df):
 
     show_data = input("Would you to see the raw data, yes or no: ").lower()
 
-    if show_data == 'yes':
+    if show_data == 'yes' or show_data = 'y':
         while end_line <= df.shape[0] - 1:
 
             print(df.iloc[start_line:end_line,:])
