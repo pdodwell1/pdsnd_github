@@ -48,7 +48,7 @@ def get_filters():
                                 "\n'No' displays all data: ").lower()
         if month_day_filter == 'yes' or month_day_filter == 'y':
             month_day_filter = True
-        elif month_day_filter == 'no':
+        elif month_day_filter == 'no' or month_day_filter =='n':
             month_day_filter = False
         else:
             print('\nInvalid input.')
@@ -234,7 +234,7 @@ def display_raw_data(df):
             end_line += 5
 
             show_data_end = input("Would you like to see more data?: ").lower()
-            if show_data_end == 'no':
+            if show_data_end == 'no' or show_data == 'n':
                 break
 
 def main():
